@@ -8,8 +8,8 @@ from selenium.webdriver.common.keys import Keys
 import unittest
 
 URL = "http://money.rediff.com/"
-locators = {"searchbox": "xpath=//*[@id='srchword']",
-            "quotebutton": "xpath=//*[contains(@class,'btn_srch')]"
+locators = {"searchbox": "//*[@id='srchword']",
+            "quotebutton": "//*[contains(@class,'btn_srch')]"
             }
 company_name = "JK Cement Ltd."
 
