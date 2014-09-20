@@ -29,6 +29,7 @@ class Test(unittest.TestCase):
         #assert "Rediff Moneywiz" in driver.title()
         element = driver.find_element_by_xpath("//*[@id='srchword']")
         element.send_keys(company_name)
+        print "this id for vommiting from local repo"
         element.send_keys(Keys.RETURN)
 
 
