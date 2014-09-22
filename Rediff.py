@@ -31,6 +31,7 @@ class Test(unittest.TestCase):
         company = driver.find_element_by_xpath(locators['req_company'])
         print "Current company is " + company.text
         assert company_name in company.text
+        print "edited from eclipse"
 
 
 if __name__ == "__main__":
