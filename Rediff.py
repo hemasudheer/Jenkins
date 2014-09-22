@@ -22,12 +22,14 @@ class Test(unittest.TestCase):
     def testRediffmoney(self):
         driver = webdriver.Firefox()
         driver.get(URL + "gainers/bse")
+        driver.implicitly_wait(10)
         webpagename = driver.find_element_by_xpath(locators['pageready'])
         print "webpage is " + webpagename.text
         #assert webpagename.text == "Rediff Moneywiz"
         element = driver.find_element_by_xpath(locators['searchbox'])
         element.send_keys(company_name)
         element.send_keys(Keys.RETURN)
+        driver.implicitly_wait(10)
         company = driver.find_element_by_xpath(locators['req_company'])
         print "Current company is " + company.text
         assert company_name in company.text
