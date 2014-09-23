@@ -4,6 +4,7 @@ import os.path
 import unittest
 
 URL = "http://google.com/"
+path = "~/Documents/Myframeworkprofile"
 
 
 class Test(unittest.TestCase):
