@@ -27,7 +27,7 @@ class Test(unittest.TestCase):
         print "webpage is " + webpagename.text
         #assert webpagename.text == "Rediff Moneywiz"
         element = driver.find_element_by_xpath(locators['searchbox'])
-        element.send_keys(company_name)
+        element.send_keys("JK Cement Ltd.")
         element.send_keys(Keys.RETURN)
         driver.implicitly_wait(10)
         company = driver.find_element_by_xpath(locators['req_company'])
