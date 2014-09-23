@@ -16,8 +16,7 @@ class Test(unittest.TestCase):
         pass
 
     def testGoogle(self):
-        profile = webdriver.FirefoxProfile(os.path.expanduser(path))
-        driver = webdriver.Firefox(profile)
+        driver = webdriver.Firefox()
         driver.get(URL)
         print " today is tuesday"
         
