@@ -5,4 +5,4 @@ cars = { "peugot" : 307 ,
          "lamborghini": "gallardo",
          "bugatti": "veyron" }
          
-pprint.pprint(obj, cars, indent= 20)
+pprint.pprint(cars, indent= 20)
